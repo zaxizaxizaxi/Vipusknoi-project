@@ -17,6 +17,13 @@ a{
     color: inherit;
 }
 
+.title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+}
+
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -142,9 +149,76 @@ a{
     margin-bottom: 50px;
 } 
 
-.title{
-    text-align: center;
-    font-weight: 500;
-    font-size: 36px;
+.travel-info__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 54px 67px;
+}
+
+.travel-info__img{
+    margin-bottom: 15px;
+
+}
+
+.travel-info__text{
+    color: #fff;
+    font-size: 16px;
     line-height: 130%;
+}
+
+.popular{
+    padding: 100px 0;
+
+}
+
+.popular__title{
+    margin-bottom: 40px;
+}
+
+.popular__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 32px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D9D9DE;
+}
+
+.popular__link{
+    padding: 16px 24px 19px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    min-height: 256px;
+
+}
+
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.popular__link-title{
+    font-weight: 500;
+    line-height: 130%;
+
+}
+
+.popular__price{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.popular__country{
+    
+}
+
+.popular__time{
+
 }
