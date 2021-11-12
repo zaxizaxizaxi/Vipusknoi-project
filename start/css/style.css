@@ -194,6 +194,7 @@ a{
     background-size: cover;
     background-position:  center;
     min-height: 256px;
+    line-height: 130%;
 
 }
 
@@ -205,20 +206,23 @@ a{
 
 .popular__link-title{
     font-weight: 500;
-    line-height: 130%;
+    margin-bottom: 15px;
 
+}
+
+.popular__link-title--big{
+    font-size: 24px;
 }
 
 .popular__price{
     font-weight: bold;
     font-size: 16px;
-    line-height: 130%;
-}
-
-.popular__country{
+    margin-top: auto;
     
 }
 
+.popular__country,
 .popular__time{
+    margin-bottom: 15px;
 
 }
