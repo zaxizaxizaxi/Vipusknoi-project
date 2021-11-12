@@ -534,9 +534,66 @@ a{
     display: none;
 }
 
+@media (max-width: 1140px){
+    .direction__inner{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .direction__img{
+        width: 100%;
+    }
+    .about__inner{
+        grid-gap: 20px;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width: 990px){
+    .popular__link{
+        min-height: 200px;
+    }
+    .popular__items{
+        grid-gap: 10px;
+    }
+}
+
 @media (max-width: 800px){
     .header__phone span{
         display: none;
+    }
+    .travel-info__items{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+    .popular__link:nth-child(3),
+    .popular__link:nth-child(6){
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .popular__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .popular__link{
+        min-height: 320px;
+    }
+    .popular{
+        padding: 50px 0;
+    }
+    .map{
+        padding-bottom: 50px;
+    }
+    .map__iframe{
+        height: 400px;
+    }
+    .about__inner{
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .about__popup{
+        min-height: 400px;
+    }
+    .about{
+        padding-bottom: 50px; 
     }
     
 }
@@ -571,7 +628,6 @@ a{
     .menu__btn::after{
         bottom: 0;
     }
-    }
     .menu__btn span{
         display: block;
         height: 2px;
@@ -604,5 +660,39 @@ a{
     }
     .menu{
         border: none;
+    }
+    .direction__inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .direction{
+        padding: 50px 0;
+    }
+    .travel-info__items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .popular__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 460px){
+    .travel-info__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .direction__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 340px){
+    .about__popup{
+        min-height: 280px;
+        
     }
 }
